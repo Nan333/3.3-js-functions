@@ -39,8 +39,7 @@ function maxOfThree(first, second, third) {
 
 function isVowel(char){
     "use strict";
-    var = string
-    if(string === "a" || "i" || "o" || "e" || "u"){
+    if(char === "a" || "i" || "o" || "e" || "u"){
       return true;
     }
     else {
@@ -54,6 +53,7 @@ function isVowel(char){
 
 function rovarspraket(phrase){
     "use strict";
+
     //...
 }
 
@@ -63,7 +63,7 @@ function rovarspraket(phrase){
 
 function sum(){
     "use strict";
-    //...
+    for (var i = 0, sum = 0; i < arr.length; sum += arr[i++]);
 }
 
 function multiply(){
