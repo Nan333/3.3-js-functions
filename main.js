@@ -52,8 +52,8 @@
 //       return false;
 //     }
 // }
-
-//console.assert(isVowel(char))
+//
+// console.assert(isVowel(char))
 //
 // // ---------------------
 // // Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
@@ -79,63 +79,69 @@
 //
 // }
 //
-// console.assert(sum([2,3,5]) === 10, "maxFail" );
+// console.assert((sum([2,3,5]) === 10, "maxFail" );
 //
+//
+//
+// function multiply(array){
+//     "use strict";
+//     var arrayMultiply = 1
+//     for (var i = 0; i < array.length; i++) {
+//       arrayMultiply = arrayMultiply * array[i];
+//         return arrayMultiply;
+//       };
+// }
 
+//console.assert(multiply([2, 3, 3]) === 18, "maxFail");
 
-function multiply(array){
+//---------------------
+// Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
+//---------------------
+
+function reverse(string){
     "use strict";
-    var arrayMultiply = 1
-    for (var i = 0; i < array.length; i++) {
-      arrayMultiply = arrayMultiply * array[i];
-        return arrayMultiply;
-      };
+    var stringArray = string.split();
+    var reverseArray = stringArray.reverse();
+    reverseArray.join('');
 }
 
-console.assert(multiply([2, 3, 3]) === 18, "maxFail");
+
+
+console.assert(("Nan is OK!") === "!KO si naN", "maxFail");
 
 // ---------------------
-// Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
+// Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
 
-// function reverse(){
-//     "use strict";
-//     //...
-// }
-//
-// // ---------------------
-// // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
-// // ---------------------
-//
 // function findLongestWord(words){
 //     "use strict";
 //     //...
 // }
 //
-// // ---------------------
-// // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
-// // ---------------------
+// ---------------------
+// Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
+// ---------------------
 //
 // function filterLongWords(words, i) {
 //     "use strict";
 //     var longWords = [];
 //     if(words[i].length > i) {
 //       longWords.push(words[i]);
-//       console.log(longWords);
-//       return longWords.length;
+//       return longWords;
+//     }
 // }
 //
-// filterLongWords(["Hello.", "Today", "is", "your", "birthday"], 5);
+// console.assert(filterLongWords(["Hello", "Today", "is", "your", "birthday"], 4) === ["Hello", "Today", "birthday"], "maxFail");
 //
 // //console.assert(filterLongWords(["Hello.", "Today", "is", "your", "birthday"], 5).length === 2, "maxFail");
 //
 //
-// //
-// // // ---------------------
-// // // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
-// // // ---------------------
-// //
-// // function charFreq(string){
-// //     "use strict";
-// //     //...
-// // }
+//
+// // ---------------------
+// // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
+// // ---------------------
+//
+// function charFreq(string){
+//     "use strict";
+//     //...
+// }
