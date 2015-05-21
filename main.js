@@ -52,21 +52,21 @@
 //       return false;
 //     }
 // }
+
+//console.assert(isVowel(char))
 //
-// //console.assert(isVowel(char))
-// //
-// // // ---------------------
-// // // Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
-// // // ---------------------
-// //
-// // function rovarspraket(phrase){
-// //     "use strict";
-// //     var vowels = ["a", "e", "i", "o", "u"]
-// //     if()
-// // }
-// //
-// // // ---------------------
-// // // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
+// // ---------------------
+// // Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
+// // ---------------------
+//
+// function rovarspraket(phrase){
+//     "use strict";
+//     var vowels = ["a", "e", "i", "o", "u"]
+//     if()
+// }
+//
+// // ---------------------
+// // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 // // // ---------------------
 // //
 // function sum(array){
@@ -80,21 +80,24 @@
 // }
 //
 // console.assert(sum([2,3,5]) === 10, "maxFail" );
-// //
 //
-//
-// function multiply(array){
-//     "use strict";
-//     for (var i = 0, multiply = 0;
-//       i < arr.length; multiply *= array[i++]) {
-//         return multiply;
-//       };
-// }
-//
-// // ---------------------
-// // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
-// // ---------------------
-//
+
+
+function multiply(array){
+    "use strict";
+    var arrayMultiply = 1
+    for (var i = 0; i < array.length; i++) {
+      arrayMultiply = arrayMultiply * array[i];
+        return arrayMultiply;
+      };
+}
+
+console.assert(multiply([2, 3, 3]) === 18, "maxFail");
+
+// ---------------------
+// Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
+// ---------------------
+
 // function reverse(){
 //     "use strict";
 //     //...
@@ -113,26 +116,26 @@
 // // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // // ---------------------
 //
-function filterLongWords(words, i){
-    "use strict";
-    var longWords = [];
-    if(words[i].length > i) {
-      longWords.push(words[i]);
-      console.log(longWords);
-      return longWords.length;
-}
-
-filterLongWords(["Hello.", "Today", "is", "your", "birthday"], 5);
-
-//console.assert(filterLongWords(["Hello.", "Today", "is", "your", "birthday"], 5).length === 2, "maxFail");
-
-
-//
-// // ---------------------
-// // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
-// // ---------------------
-//
-// function charFreq(string){
+// function filterLongWords(words, i) {
 //     "use strict";
-//     //...
+//     var longWords = [];
+//     if(words[i].length > i) {
+//       longWords.push(words[i]);
+//       console.log(longWords);
+//       return longWords.length;
 // }
+//
+// filterLongWords(["Hello.", "Today", "is", "your", "birthday"], 5);
+//
+// //console.assert(filterLongWords(["Hello.", "Today", "is", "your", "birthday"], 5).length === 2, "maxFail");
+//
+//
+// //
+// // // ---------------------
+// // // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
+// // // ---------------------
+// //
+// // function charFreq(string){
+// //     "use strict";
+// //     //...
+// // }
